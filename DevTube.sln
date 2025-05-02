@@ -1,10 +1,63 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7283D221-DBF0-44EB-B518-20AE2842FEF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E6748AD0-49D6-4DFB-8226-D9499D9AAF9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CCE5FFFD-1698-4F86-94A2-6BEB37AA56EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{DF727031-DE83-4C82-8DF5-7EC12847BD19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain.Core", "ECommerce.Domain.Core\ECommerce.Domain.Core.csproj", "{4D01AC9F-1DE9-4F58-9798-CD6390853B8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{7982A8D6-32AC-4EF9-B2F1-A2F417997189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure.Database", "ECommerce.Infrastructure.Database\ECommerce.Infrastructure.Database.csproj", "{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure", "ECommerce.Infrastructure\ECommerce.Infrastructure.csproj", "{6D143CDD-4AF0-41F8-BA2A-F62720126F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Application", "ECommerce.Application\ECommerce.Application.csproj", "{BA224E36-8041-43A8-8366-A88C3DD65E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.API", "ECommerce.API\ECommerce.API.csproj", "{14BA166B-C933-48DE-927C-1A5C3730913A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D01AC9F-1DE9-4F58-9798-CD6390853B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D01AC9F-1DE9-4F58-9798-CD6390853B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D01AC9F-1DE9-4F58-9798-CD6390853B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D01AC9F-1DE9-4F58-9798-CD6390853B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D143CDD-4AF0-41F8-BA2A-F62720126F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D143CDD-4AF0-41F8-BA2A-F62720126F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D143CDD-4AF0-41F8-BA2A-F62720126F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D143CDD-4AF0-41F8-BA2A-F62720126F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA224E36-8041-43A8-8366-A88C3DD65E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA224E36-8041-43A8-8366-A88C3DD65E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA224E36-8041-43A8-8366-A88C3DD65E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA224E36-8041-43A8-8366-A88C3DD65E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BA166B-C933-48DE-927C-1A5C3730913A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BA166B-C933-48DE-927C-1A5C3730913A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BA166B-C933-48DE-927C-1A5C3730913A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BA166B-C933-48DE-927C-1A5C3730913A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D01AC9F-1DE9-4F58-9798-CD6390853B8A} = {7283D221-DBF0-44EB-B518-20AE2842FEF4}
+		{7A07DCB7-6AEF-4DCD-A09A-7A262387FD31} = {E6748AD0-49D6-4DFB-8226-D9499D9AAF9C}
+		{6D143CDD-4AF0-41F8-BA2A-F62720126F56} = {E6748AD0-49D6-4DFB-8226-D9499D9AAF9C}
+		{BA224E36-8041-43A8-8366-A88C3DD65E8D} = {DF727031-DE83-4C82-8DF5-7EC12847BD19}
+		{14BA166B-C933-48DE-927C-1A5C3730913A} = {CCE5FFFD-1698-4F86-94A2-6BEB37AA56EF}
 	EndGlobalSection
 EndGlobal
