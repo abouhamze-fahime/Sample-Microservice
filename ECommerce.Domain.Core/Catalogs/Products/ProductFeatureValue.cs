@@ -1,4 +1,5 @@
-﻿using ECommerce.Domain.Core.Catalogs.Features;
+﻿using ECommerce.Domain.Core.Base;
+using ECommerce.Domain.Core.Catalogs.Features;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.Core.Catalogs.Products;
 
-public class ProductFeatureValue
+public class ProductFeatureValue : Entity<Guid>
 {
-    internal ProductId ProductId { get; private set; }
+    public ProductId ProductId { get; private set; }
     public FeatureId FeatureId { get; private set; }
     public string Value { get; private set; }
 

@@ -49,4 +49,6 @@ public class Product: AggregateRoot<ProductId>
         CreateNewProductFeature(productFeature);
         AddDomainEvent(new AddProductSendNotificationEvent(Id));
     }
+
+    private Product() { }
 }
